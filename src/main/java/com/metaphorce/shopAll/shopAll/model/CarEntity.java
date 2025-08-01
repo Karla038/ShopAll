@@ -8,7 +8,7 @@ public class CarEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+        private Integer id;
 
     @ManyToOne
     @JoinColumn(name = "usuario_id")
@@ -20,11 +20,11 @@ public class CarEntity {
 
     private int cantidad;
 
-    public Long getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
